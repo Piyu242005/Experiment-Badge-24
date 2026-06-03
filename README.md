@@ -1,4 +1,173 @@
-You mean **use cases of Confusion Matrix** — here's a clear breakdown:
+Here's a simple comparison for **NeuraFlow AI**:
+
+# ❌ Without Docker
+
+A recruiter downloads your project.
+
+### Steps
+
+```bash
+git clone https://github.com/Piyu242005/NeuraFlow-AI.git
+
+cd NeuraFlow-AI
+
+python -m venv venv
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+streamlit run app.py
+```
+
+### Possible Problems
+
+```text
+❌ Python version mismatch
+❌ Package conflicts
+❌ Missing dependencies
+❌ Environment setup issues
+❌ ChromaDB installation issues
+```
+
+---
+
+# ✅ With Docker
+
+A recruiter downloads your project.
+
+### Steps
+
+```bash
+git clone https://github.com/Piyu242005/NeuraFlow-AI.git
+
+cd NeuraFlow-AI
+
+docker compose up
+```
+
+### That's It
+
+```text
+🐳 Build Container
+↓
+📦 Install Dependencies
+↓
+⚙️ Configure Environment
+↓
+🚀 Start Streamlit
+↓
+🌐 Open Website
+```
+
+---
+
+# Visual Comparison
+
+## Without Docker
+
+```text
+Recruiter
+    ↓
+Install Python
+    ↓
+Create Virtual Environment
+    ↓
+Install Packages
+    ↓
+Fix Dependency Errors
+    ↓
+Configure Environment Variables
+    ↓
+Run App
+```
+
+### Commands
+
+```bash
+python -m venv venv
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+streamlit run app.py
+```
+
+---
+
+## With Docker
+
+```text
+Recruiter
+    ↓
+docker compose up
+    ↓
+Application Running
+```
+
+### Command
+
+```bash
+docker compose up
+```
+
+---
+
+# Why Companies Use Docker
+
+Docker packages everything:
+
+```text
+🐍 Python
+
+📦 Libraries
+
+🧠 ChromaDB
+
+🤖 AI Services
+
+⚙️ Configuration
+
+🚀 Streamlit
+```
+
+into one container.
+
+So it works the same on:
+
+```text
+Windows ✅
+
+Linux ✅
+
+MacOS ✅
+
+Cloud Servers ✅
+```
+
+---
+
+# Recruiter View
+
+### Without Docker
+
+```text
+Good AI Project
+```
+
+### With Docker
+
+```text
+Production-Ready AI Project
+```
+
+That's why Docker is often one of the final improvements added before showcasing a project professionally.
+
+
+
+<details>
+<summary>You mean use cases of Confusion Matrix — here's a clear breakdown:</summary>
 
 ---
 
@@ -64,3 +233,5 @@ Actual: Yes   |      FN          |      TP        |
 > *"I look at the confusion matrix first to understand which type of error is more costly for the business, then choose my metric accordingly."*
 
 That answer alone impresses most interviewers. Want me to explain Precision, Recall, and F1 in the same depth?
+
+</details>
