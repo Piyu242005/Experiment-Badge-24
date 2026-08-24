@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple interactive educational page explaining the major systems of the human organism.">
+  <title>Human Organism | Experiment Badge 24</title>
+  <style>
+    :root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#657086;--accent:#e63946;--border:#e6eaf0;--shadow:0 10px 30px rgba(23,32,51,.08)}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    header{background:linear-gradient(135deg,#151a26,#2b3345);color:#fff;padding:70px 20px;text-align:center}
+    header .tag{display:inline-block;padding:6px 12px;border:1px solid rgba(255,255,255,.2);border-radius:999px;font-size:.8rem;margin-bottom:18px;color:#dfe5ef}
+    h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.1;margin-bottom:15px}
+    header p{max-width:720px;margin:auto;color:#d6dce7;font-size:1.05rem}
+    main{max-width:1100px;margin:auto;padding:45px 20px 70px}
+    .intro{background:var(--card);padding:28px;border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow);margin-bottom:35px}
+    .intro h2{margin-bottom:8px}
+    .systems{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:23px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(23,32,51,.12)}
+    .icon{font-size:2rem;margin-bottom:10px}.card h3{margin-bottom:7px}.card p{color:var(--muted);font-size:.94rem}
+    .facts{margin-top:38px;background:#171d2a;color:#fff;border-radius:20px;padding:30px}
+    .facts h2{margin-bottom:18px}.facts ul{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;list-style:none}.facts li{padding:12px 14px;background:rgba(255,255,255,.07);border-radius:10px;color:#e3e7ef}
+    footer{text-align:center;padding:25px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--border)}
+    .accent{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="tag">Experiment Badge 24 • HTML Experiment</div>
+    <h1>🧬 Human Organism</h1>
+    <p>A simple visual introduction to how the major systems of the human body work together to keep us alive, active, and healthy.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>What is a human organism?</h2>
+      <p>A human organism is a living biological system made of cells, tissues, organs, and organ systems. These parts work together to perform essential functions such as breathing, circulation, digestion, movement, growth, and protection.</p>
+    </section>
+
+    <h2 style="margin-bottom:18px">Major Body Systems</h2>
+    <section class="systems">
+      <article class="card"><div class="icon">🧠</div><h3>Nervous System</h3><p>Controls communication, sensation, movement, memory, and responses. It includes the brain, spinal cord, and nerves.</p></article>
+      <article class="card"><div class="icon">❤️</div><h3>Circulatory System</h3><p>The heart and blood vessels transport oxygen, nutrients, hormones, and waste products around the body.</p></article>
+      <article class="card"><div class="icon">🫁</div><h3>Respiratory System</h3><p>Brings oxygen into the body and removes carbon dioxide. The lungs are its main organs.</p></article>
+      <article class="card"><div class="icon">🍎</div><h3>Digestive System</h3><p>Breaks food into nutrients that the body can absorb and use for energy, growth, and repair.</p></article>
+      <article class="card"><div class="icon">🦴</div><h3>Skeletal System</h3><p>Provides structure and protection. Bones also help the body move and store important minerals.</p></article>
+      <article class="card"><div class="icon">💪</div><h3>Muscular System</h3><p>Muscles produce movement, maintain posture, and generate body heat.</p></article>
+      <article class="card"><div class="icon">🛡️</div><h3>Immune System</h3><p>Protects the body from harmful pathogens and helps identify and remove threats.</p></article>
+      <article class="card"><div class="icon">🧪</div><h3>Endocrine System</h3><p>Produces hormones that regulate processes such as metabolism, growth, stress, and reproduction.</p></article>
+      <article class="card"><div class="icon">🚰</div><h3>Urinary System</h3><p>Filters the blood, removes certain wastes, and helps maintain water and electrolyte balance.</p></article>
+      <article class="card"><div class="icon">👶</div><h3>Reproductive System</h3><p>Contains organs involved in reproduction and the production of reproductive cells and hormones.</p></article>
+    </section>
+
+    <section class="facts">
+      <h2>🔬 Key Idea</h2>
+      <ul>
+        <li>Cells form tissues.</li>
+        <li>Tissues form organs.</li>
+        <li>Organs work together in systems.</li>
+        <li>Body systems depend on each other.</li>
+        <li>Homeostasis keeps internal conditions balanced.</li>
+        <li>The goal is coordinated survival and function.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Built as a simple HTML learning experiment • Experiment Badge 24</footer>
+</body>
+</html>
