@@ -1,237 +1,103 @@
-Here's a simple comparison for **NeuraFlow AI**:
+# Experiment Badge 24 — 3D Human Anatomy Explorer
 
-# ❌ Without Docker
+An interactive 3D human anatomy visualization built with **Three.js, WebGL, and a high-quality anatomical GLB/GLTF model**.
 
-A recruiter downloads your project.
+## 🧍 3D Anatomy Technology
 
-### Steps
+The project uses a professionally created anatomical **GLB/GLTF** model instead of constructing the human body from basic geometric primitives.
 
-```bash
-git clone https://github.com/Piyu242005/NeuraFlow-AI.git
+### GLB / GLTF
 
-cd NeuraFlow-AI
+GLB/GLTF is a modern, web-friendly 3D model format that can contain:
 
-python -m venv venv
+- Human anatomy geometry
+- Materials and textures
+- Anatomical structures
+- Scene information
+- Optional animations
 
-venv\Scripts\activate
-
-pip install -r requirements.txt
-
-streamlit run app.py
-```
-
-### Possible Problems
+The model can represent structures such as:
 
 ```text
-❌ Python version mismatch
-❌ Package conflicts
-❌ Missing dependencies
-❌ Environment setup issues
-❌ ChromaDB installation issues
+Human Body
+├── Skin
+├── Muscles
+├── Skeleton
+├── Brain
+├── Heart
+├── Lungs
+├── Liver
+├── Kidneys
+└── Other internal organs
 ```
 
----
+### Three.js
 
-# ✅ With Docker
+**Three.js** is used as the JavaScript 3D engine responsible for:
 
-A recruiter downloads your project.
+- Loading the GLB/GLTF model
+- Creating the 3D scene
+- Camera and lighting
+- User interaction
+- Organ selection
+- Rotation and zoom
+- Anatomical layer visibility
 
-### Steps
+### WebGL
 
-```bash
-git clone https://github.com/Piyu242005/NeuraFlow-AI.git
-
-cd NeuraFlow-AI
-
-docker compose up
-```
-
-### That's It
+Three.js uses **WebGL** to communicate with the GPU and render the 3D anatomy directly in the browser.
 
 ```text
-🐳 Build Container
-↓
-📦 Install Dependencies
-↓
-⚙️ Configure Environment
-↓
-🚀 Start Streamlit
-↓
-🌐 Open Website
+High-quality GLB/GLTF
+        ↓
+     Three.js
+        ↓
+      WebGL
+        ↓
+       GPU
+        ↓
+Interactive 3D Anatomy
 ```
 
----
+## ✨ Features
 
-# Visual Comparison
+- 🧍 High-quality anatomical 3D model
+- 🧠 Interactive organ exploration
+- 🫀 Anatomical structure selection
+- 🔍 Search and navigation
+- 🔄 3D rotation and zoom
+- 🎨 Realistic materials and lighting
+- 🦴 Anatomical layer controls
+- 📱 Responsive mobile interface
+- ⚡ GPU-accelerated WebGL rendering
+- 🌐 Runs directly in the browser
 
-## Without Docker
+## 🛠️ Technology Stack
 
-```text
-Recruiter
-    ↓
-Install Python
-    ↓
-Create Virtual Environment
-    ↓
-Install Packages
-    ↓
-Fix Dependency Errors
-    ↓
-Configure Environment Variables
-    ↓
-Run App
-```
+| Technology | Purpose |
+|---|---|
+| **Three.js** | 3D scene and interaction engine |
+| **WebGL** | GPU-accelerated browser rendering |
+| **GLB / GLTF** | Anatomical 3D model format |
+| **JavaScript** | Application logic |
+| **HTML/CSS** | Interface and responsive UI |
+| **GitHub Pages** | Web deployment |
 
-### Commands
+## 🎯 Project Goal
 
-```bash
-python -m venv venv
+The goal is to create an interactive digital anatomy experience where users can rotate, zoom, inspect, and explore the human body and its internal structures in real time.
 
-source venv/bin/activate
+> **GLB/GLTF = 3D model**  
+> **Three.js = 3D engine**  
+> **WebGL = GPU rendering technology**
 
-pip install -r requirements.txt
+## 🚀 Live Demo
 
-streamlit run app.py
-```
+[Open the 3D Human Anatomy Explorer](https://piyu242005.github.io/Experiment-Badge-24/)
 
----
+## 👨‍💻 Author
 
-## With Docker
+**Piyush Ramteke**  
+Data Scientist | Python | Machine Learning
 
-```text
-Recruiter
-    ↓
-docker compose up
-    ↓
-Application Running
-```
-
-### Command
-
-```bash
-docker compose up
-```
-
----
-
-# Why Companies Use Docker
-
-Docker packages everything:
-
-```text
-🐍 Python
-
-📦 Libraries
-
-🧠 ChromaDB
-
-🤖 AI Services
-
-⚙️ Configuration
-
-🚀 Streamlit
-```
-
-into one container.
-
-So it works the same on:
-
-```text
-Windows ✅
-
-Linux ✅
-
-MacOS ✅
-
-Cloud Servers ✅
-```
-
----
-
-# Recruiter View
-
-### Without Docker
-
-```text
-Good AI Project
-```
-
-### With Docker
-
-```text
-Production-Ready AI Project
-```
-
-That's why Docker is often one of the final improvements added before showcasing a project professionally.
-
-
-
-<details>
-<summary>You mean use cases of Confusion Matrix — here's a clear breakdown:</summary>
-
----
-
-## What is a Confusion Matrix?
-
-For a binary problem (Churn = Yes/No), it gives you a 2×2 table:
-
-```
-                  Predicted: No    Predicted: Yes
-Actual: No    |      TN          |      FP        |
-Actual: Yes   |      FN          |      TP        |
-```
-
-- **TP** — Correctly predicted churn
-- **TN** — Correctly predicted no churn
-- **FP** — Said churn, actually didn't (False Alarm)
-- **FN** — Said no churn, actually did (Missed)
-
----
-
-## Real-World Use Cases:
-
-### 1. 🏦 Your Churn Project
-- **FN is most costly** — you missed a customer who left
-- **Goal:** Minimize False Negatives (catch as many churners as possible)
-- **Metric to focus on:** Recall
-
-### 2. 🏥 Medical Diagnosis (Cancer Detection)
-- **FN is dangerous** — told patient "you're fine" but they have cancer
-- **Goal:** Minimize False Negatives at all costs
-- **Metric:** Recall / Sensitivity
-
-### 3. 📧 Spam Detection
-- **FP is costly** — important email lands in spam
-- **Goal:** Minimize False Positives
-- **Metric:** Precision
-
-### 4. 💳 Fraud Detection
-- **FN is costly** — missed a fraud transaction
-- **Goal:** Catch all fraud (high Recall), but too many FP annoys customers
-- **Balance:** F1 Score
-
-### 5. 🏭 Manufacturing Defect Detection
-- **FP is costly** — discarding a good product wastes money
-- **Goal:** Minimize False Positives
-- **Metric:** Precision
-
----
-
-## Key Takeaway Table:
-
-| Situation | Costly Error | Focus On |
-|---|---|---|
-| Churn prediction | FN (missed churner) | Recall |
-| Cancer detection | FN (missed disease) | Recall |
-| Spam filter | FP (blocked real email) | Precision |
-| Fraud detection | FN (missed fraud) | F1 Score |
-| Defect detection | FP (wasted good product) | Precision |
-
----
-
-**In interviews**, always say:
-> *"I look at the confusion matrix first to understand which type of error is more costly for the business, then choose my metric accordingly."*
-
-That answer alone impresses most interviewers. Want me to explain Precision, Recall, and F1 in the same depth?
-
-</details>
+GitHub: [@Piyu242005](https://github.com/Piyu242005)
